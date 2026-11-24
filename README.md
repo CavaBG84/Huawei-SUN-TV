@@ -3,7 +3,7 @@
 Applicazione Android leggera per il monitoraggio in tempo reale degli impianti fotovoltaici **Huawei SUN2000** tramite protocollo **Modbus TCP** in rete locale (Wi-Fi / LAN), senza dipendenza dal cloud FusionSolar.
 
 Progettata per rimanere attiva su schermi dedicati, Smart TV, Amazon Fire TV Stick e dispositivi Android (inclusi dispositivi legacy Android 4.4 KitKat).
-![Schermata principale Huawei TV](assets/screenshot-home.jpg)
+![Schermata principale Huawei TV](screenshot-home.jpg)
 
 ---
 
@@ -70,7 +70,7 @@ Questa app è gratuita e priva di pubblicità. Se ti è utile per monitorare il 
 
 Oppure inquadra il QR Code:
 
-<img src="assets/paypal-qr.png" alt="QR Code PayPal" width="200"/>
+<img src="paypal-qr.png.png" alt="QR Code PayPal" width="200"/>
 
 ---
 
