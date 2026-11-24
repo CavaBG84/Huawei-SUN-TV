@@ -59,7 +59,13 @@ Al primo avvio, apri il menu impostazioni dell'app e inserisci i seguenti parame
    adb connect IP_DELLA_FIRE_TV:5555
    adb install nome_file_app.apk
    ```
-
+### Su Amazon Fire TV Stick (senza PC / ADB)
+1. Installa l'app gratuita **Downloader** (di AFTVnews) dallo store Amazon della Fire TV.
+2. Vai in **Impostazioni** → **La mia Fire TV** → **Opzioni sviluppatore** → **Installa app sconosciute** e attiva l'opzione per **Downloader**.
+3. Apri **Downloader**, seleziona la barra dell'indirizzo e digita il codice corrispondente alla tua versione:
+   * **Versione standard (Android moderno / Fire TV Stick):** `9183283`
+   * **Versione legacy (Android 4.4 KitKat):** `1728411`
+4. Attendi il download automatico e conferma su **Installa**.
 ---
 
 ## Supporta il Progetto
