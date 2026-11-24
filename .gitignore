@@ -1,0 +1,7 @@
+# Evita di caricare file binari o chiavi nel repository (gli APK vanno nelle Releases)
+*.apk
+*.aab
+*.jks
+*.keystore
+.DS_Store
+Thumbs.db
