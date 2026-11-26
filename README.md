@@ -1,4 +1,5 @@
 # Huawei TV – Monitoraggio Locale SUN2000
+[![Download totali](https://img.shields.io/github/downloads/CavaBG84/Huawei-SUN-TV/total?label=Download%20totali&color=2ea44f&style=for-the-badge)](https://github.com/CavaBG84/Huawei-SUN-TV/releases)
 
 Applicazione Android leggera per il monitoraggio in tempo reale degli impianti fotovoltaici **Huawei SUN2000** tramite protocollo **Modbus TCP** in rete locale (Wi-Fi / LAN), senza dipendenza dal cloud FusionSolar.
 
