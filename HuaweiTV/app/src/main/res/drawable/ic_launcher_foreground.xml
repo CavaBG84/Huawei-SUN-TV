@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Solar horizon arc and sun rays (#FFB300) -->
+    <path
+        android:pathData="M44.5,43.5 A9.5,9.5 0 0,1 63.5,43.5"
+        android:strokeColor="#FFB300"
+        android:strokeLineCap="round"
+        android:strokeWidth="3.2" />
+    <path
+        android:pathData="M40,44.5 L68,44.5"
+        android:strokeColor="#FFB300"
+        android:strokeLineCap="round"
+        android:strokeWidth="2.0" />
+    <path
+        android:pathData="M41.88,36.50 L38.85,34.75 M47.00,31.38 L45.25,28.34 M54.00,29.50 L54.00,26.00 M61.00,31.38 L62.75,28.34 M66.12,36.50 L69.15,34.75"
+        android:strokeColor="#FFB300"
+        android:strokeLineCap="round"
+        android:strokeWidth="2.8" />
+
+    <!-- Geometric monogram "S" (#F8FAFC) -->
+    <path
+        android:pathData="M49.0,51.5 L38.75,51.5 A5.25,5.25 0 0,0 38.75,62.0 L44.75,62.0 A5.25,5.25 0 0,1 44.75,72.5 L34.0,72.5"
+        android:strokeColor="#F8FAFC"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:strokeWidth="4.4" />
+
+    <!-- Geometric monogram "D" (#38BDF8) -->
+    <path
+        android:pathData="M57.5,51.5 L64.0,51.5 A10.5,10.5 0 0,1 64.0,72.5 L57.5,72.5 Z"
+        android:strokeColor="#38BDF8"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:strokeWidth="4.4" />
+
+</vector>
