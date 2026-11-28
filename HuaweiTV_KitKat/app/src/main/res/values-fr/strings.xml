@@ -1,0 +1,149 @@
+<resources>
+    <string name="app_name">SolarDeck</string>
+    <string name="inverter_model">SUN2000 + LUNA2000</string>
+    <string name="btn_settings">Paramètres</string>
+    <string name="label_updated_prefix">Mis à jour : %1$s</string>
+    <string name="label_updated_empty">Mis à jour : --:--:--</string>
+
+    <!-- Status Bar / Connection -->
+    <string name="status_connecting_generic">Connexion en cours...</string>
+    <string name="status_connecting_huawei">Connexion à %1$s:%2$d...</string>
+    <string name="status_connecting_fronius">Lecture Fronius %1$s:%2$d...</string>
+    <string name="status_connected">Connecté (%1$s:%2$d)</string>
+    <string name="status_error_retry">Erreur (nouvel essai dans %1$ds)</string>
+    <string name="status_error_detail">Erreur (%1$ds) : %2$s</string>
+    <string name="status_mock">SIMULATION (MOCK)</string>
+    <string name="status_disconnected">Déconnecté</string>
+    <string name="status_needs_config">Configurer l\'IP</string>
+
+    <!-- Dashboard Cards & Diagram -->
+    <string name="daily_yield_title">PRODUCTION DU JOUR</string>
+    <string name="daily_yield_subtitle">Énergie solaire totale produite aujourd\'hui</string>
+    <string name="daily_yield_subtitle_compact">Énergie produite aujourd\'hui</string>
+    <string name="autonomy_title">AUTONOMIE ÉNERGÉTIQUE</string>
+    <string name="autonomy_title_compact">AUTONOMIE</string>
+    <string name="autonomy_subtitle_100" formatted="false">100 % des besoins couverts par PV + Batterie</string>
+    <string name="autonomy_subtitle_partial">Appoint depuis le réseau électrique</string>
+    <string name="autonomy_subtitle_100_compact" formatted="false">100 % PV + Batterie</string>
+    <string name="autonomy_subtitle_partial_compact">Depuis le réseau</string>
+
+    <string name="node_pv_title">Photovoltaïque (PV)</string>
+    <string name="node_pv_title_compact">PV (Solaire)</string>
+    <string name="node_pv_active">Production active</string>
+    <string name="node_pv_active_compact">Actif</string>
+    <string name="node_pv_inactive">Inactif (Nuit)</string>
+    <string name="node_pv_inactive_compact">Inactif</string>
+
+    <string name="node_house_title">Maison (Consommation)</string>
+    <string name="node_house_title_compact">Maison</string>
+    <string name="node_house_subtitle">Consommation actuelle</string>
+    <string name="node_house_subtitle_compact">Charge actuelle</string>
+
+    <string name="node_battery_title">Batterie</string>
+    <string name="node_battery_not_present">Non présente</string>
+    <string name="node_battery_charging">En charge (+%1$s)</string>
+    <string name="node_battery_discharging">En décharge (%1$s)</string>
+    <string name="node_battery_standby">Veille (0 W)</string>
+
+    <string name="node_grid_title">Réseau électrique</string>
+    <string name="node_grid_title_compact">Réseau</string>
+    <string name="node_grid_export">Injection réseau</string>
+    <string name="node_grid_export_compact">Injection</string>
+    <string name="node_grid_import">Soutirage réseau</string>
+    <string name="node_grid_import_compact">Soutirage</string>
+    <string name="node_grid_balanced">Équilibré (0 W)</string>
+    <string name="node_grid_balanced_compact">Équilibré</string>
+
+    <string name="hub_inverter_ac">ONDULEUR AC</string>
+
+    <!-- PowerGuard & Shelly Banner -->
+    <string name="guard_title_critical" formatted="false">ALARME COUPURE COMPTEUR (&gt;+33%)</string>
+    <string name="guard_title_warning" formatted="false">ALERTE SEUIL COMPTEUR (+10%..+33%)</string>
+    <string name="guard_title_shelly">DÉLESTAGE SHELLY</string>
+    <string name="guard_import_and_contract">Soutirage : %1$.2f kW (Contrat %2$.1f kW)</string>
+    <string name="guard_remaining_time">Temps restant : %1$s</string>
+    <string name="guard_shelly_pending">Coupure Shelly dans %1$ds</string>
+    <string name="guard_shelly_shedding_in_progress">Délestage en cours : %1$s...</string>
+    <string name="guard_shelly_shed_success">Charge coupée : %1$s</string>
+    <string name="guard_shelly_shed_error">Erreur coupure %1$s : %2$s</string>
+    <string name="guard_shelly_unreachable">réseau inaccessible</string>
+    <string name="guard_btn_mute">MUET</string>
+    <string name="guard_muted_badge">AUDIO COUPÉ</string>
+    <string name="guard_btn_reset">RÉARMER</string>
+
+    <!-- Settings Dialog -->
+    <string name="settings_title">PARAMÈTRES SOLARDECK</string>
+    <string name="settings_section_language">LANGUE DE L\'APPLICATION</string>
+    <string name="settings_label_language">CHOISIR LA LANGUE :</string>
+    <string name="settings_section_inverter">CONNEXION ONDULEUR</string>
+    <string name="settings_label_inverter_brand">MARQUE / PROTOCOLE ONDULEUR :</string>
+    <string name="settings_brand_huawei">Huawei SUN2000 (Modbus TCP)</string>
+    <string name="settings_brand_fronius">Fronius (Solar API locale)</string>
+    <string name="settings_label_ip">ADRESSE IP ONDULEUR :</string>
+    <string name="settings_hint_ip">ex. 192.168.1.100</string>
+    <string name="settings_label_port">PORT MODBUS (défaut : 502) :</string>
+    <string name="settings_label_unit_id">ID ESCLAVE / UNITÉ (défaut : 1) :</string>
+    <string name="settings_label_fronius_id">ID APPAREIL FRONIUS (défaut : 1) :</string>
+    <string name="settings_label_poll">INTERVALLE DE COLLECTE (%1$ds) :</string>
+    <string name="settings_label_preset">Préréglage :</string>
+    <string name="settings_mock_title">MODE MOCK (SIMULATION)</string>
+    <string name="settings_mock_subtitle">Générer des données de test sans onduleur</string>
+    <string name="settings_state_on">ACTIF</string>
+    <string name="settings_state_off">INACTIF</string>
+
+    <string name="settings_section_meter">COMPTEUR / ALARME DE DÉPASSEMENT</string>
+    <string name="settings_meter_alarm_title">ALARME DÉPASSEMENT PUISSANCE</string>
+    <string name="settings_meter_alarm_subtitle">Alerte si le soutirage dépasse le seuil contractuel</string>
+    <string name="settings_label_contract_kw">PUISSANCE CONTRACTUELLE (kW) :</string>
+    <string name="settings_hint_contract_kw">ex. 3.0</string>
+    <string name="settings_meter_sound_title">SIGNAL SONORE D\'ALARME</string>
+    <string name="settings_meter_sound_subtitle">Émettre un bip sonore en cas de dépassement</string>
+
+    <string name="settings_section_shelly">DÉLESTAGE LOCAL VIA SHELLY (LAN)</string>
+    <string name="settings_shelly_master_title">ACTIVER DÉLESTAGE SHELLY</string>
+    <string name="settings_shelly_master_subtitle">Coupe le relais local en cas de dépassement continu</string>
+    <string name="settings_label_shelly_name">NOM DE LA CHARGE (RELAIS 1) :</string>
+    <string name="settings_hint_shelly_name">ex. Chauffe-eau / Clim</string>
+    <string name="settings_label_shelly_ip">IP STATIQUE SHELLY :</string>
+    <string name="settings_hint_shelly_ip">ex. 192.168.1.120</string>
+    <string name="settings_label_shelly_gen">GÉNÉRATION D\'APPAREIL SHELLY :</string>
+    <string name="settings_label_shelly_channel">CANAL RELAIS (défaut : 0) :</string>
+    <string name="settings_label_shelly_delay">DÉLAI ANTI-DÉMARRAGE (s, défaut : 15) :</string>
+    <string name="settings_btn_cancel">ANNULER</string>
+    <string name="settings_btn_save">ENREGISTRER</string>
+
+    <string name="err_prefix">ERREUR : %1$s</string>
+    <string name="err_invalid_inverter_ip">Format IP onduleur invalide (ex. 192.168.1.100).</string>
+    <string name="err_invalid_port">Port Modbus invalide (1-65535).</string>
+    <string name="err_invalid_unit_id">ID Esclave / Unité invalide (0-247).</string>
+    <string name="err_invalid_fronius_id">ID Appareil Fronius invalide (0-99).</string>
+    <string name="err_invalid_contract_kw">Puissance contractuelle (kW) invalide (ex. 3.0, 4.5, 6.0).</string>
+    <string name="err_invalid_shelly_ip">Format IP Shelly invalide (ex. 192.168.1.120).</string>
+    <string name="err_missing_shelly_ip">Saisissez l\'IP statique du Shelly pour activer le délestage.</string>
+    <string name="err_invalid_shelly_channel">Canal relais Shelly invalide (0-3).</string>
+    <string name="err_invalid_shelly_delay">Délai anti-démarrage invalide (1-300s).</string>
+    <string name="err_missing_shelly_ip_test">Saisissez l\'adresse IP du Shelly avant de lancer le test.</string>
+
+    <!-- Manual Test Actions -->
+    <string name="guard_test_badge">TEST SIMULÉ</string>
+    <string name="settings_btn_test_alarm">Tester alarme seuil</string>
+    <string name="settings_test_alarm_hint">Simule un pic critique de 8s (son + bannière, sans coupure Shelly)</string>
+    <string name="settings_btn_test_shelly">Tester commande OFF</string>
+    <string name="settings_test_shelly_sending">Envoi commande OFF à %1$s...</string>
+    <string name="settings_test_shelly_success">OK : le relais %1$s a répondu et reçu la commande OFF (HTTP 200). Pensez à le rallumer via l\'app Shelly ou l\'interrupteur si besoin.</string>
+    <string name="settings_test_shelly_error">Erreur test Shelly : %1$s</string>
+
+    <!-- Voluntary Coffee Prompt -->
+    <string name="coffee_title">VOUS AIMEZ SOLARDECK ? OFFREZ-MOI UN CAFÉ</string>
+    <string name="coffee_message">SolarDeck est 100 % gratuit et sans publicité. Si l\'application vous est utile au quotidien, vous pouvez soutenir son développement avec un café volontaire.</string>
+    <string name="coffee_qr_caption">Scannez avec votre smartphone</string>
+    <string name="coffee_btn_paypal">Offrir un café (PayPal)</string>
+    <string name="coffee_btn_already">J\'ai déjà offert un café</string>
+    <string name="coffee_btn_close_desc">Fermer et rappeler dans 3 jours</string>
+    <string name="coffee_confirm_title">CONFIRMATION</string>
+    <string name="coffee_confirm_message">Confirmez-vous avoir déjà offert un café et vouloir désactiver cet avis ?</string>
+    <string name="coffee_confirm_yes">Oui, confirmer</string>
+    <string name="coffee_confirm_cancel">Annuler</string>
+    <string name="coffee_thank_you_message">Merci du fond du cœur, cet avis n\'apparaîtra plus. Profitez bien de l\'application !</string>
+    <string name="coffee_btn_ok">OK</string>
+</resources>

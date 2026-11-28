@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="640dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog"
+    android:fadeScrollbars="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- ===================================================== -->
+        <!-- STEP 1: PROMPT "OFFRI UN CAFFE" -->
+        <!-- ===================================================== -->
+        <LinearLayout
+            android:id="@+id/layout_coffee_step_prompt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_coffee_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/coffee_title"
+                    android:src="@drawable/ic_coffee" />
+
+                <Button
+                    android:id="@+id/btn_coffee_close_x"
+                    android:layout_width="38dp"
+                    android:layout_height="34dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/bg_button_selector"
+                    android:contentDescription="@string/coffee_btn_close_desc"
+                    android:focusable="true"
+                    android:nextFocusDown="@+id/tv_coffee_paypal_link"
+                    android:text="X"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@id/img_coffee_icon"
+                    android:layout_toRightOf="@id/img_coffee_icon"
+                    android:layout_toStartOf="@id/btn_coffee_close_x"
+                    android:layout_toLeftOf="@id/btn_coffee_close_x"
+                    android:text="@string/coffee_title"
+                    android:textColor="@color/solar_gold"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!-- Left: Message, PayPal link, Action Buttons -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="14dp"
+                    android:layout_marginRight="14dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="2dp"
+                        android:text="@string/coffee_message"
+                        android:textColor="@color/text_primary"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tv_coffee_paypal_link"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_button_selector"
+                        android:clickable="true"
+                        android:ellipsize="end"
+                        android:focusable="true"
+                        android:nextFocusUp="@+id/btn_coffee_close_x"
+                        android:nextFocusDown="@+id/btn_coffee_paypal"
+                        android:paddingStart="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="7dp"
+                        android:paddingEnd="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="7dp"
+                        android:singleLine="true"
+                        android:text="https://paypal.me/cavalleridaniele"
+                        android:textColor="@color/house_blue"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_coffee_paypal"
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_button_selector"
+                        android:focusable="true"
+                        android:nextFocusUp="@+id/tv_coffee_paypal_link"
+                        android:nextFocusDown="@+id/btn_coffee_already"
+                        android:text="@string/coffee_btn_paypal"
+                        android:textColor="@color/solar_gold"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_coffee_already"
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bg_button_selector"
+                        android:focusable="true"
+                        android:nextFocusUp="@+id/btn_coffee_paypal"
+                        android:nextFocusDown="@+id/btn_coffee_close_x"
+                        android:text="@string/coffee_btn_already"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!-- Right: Local QR Code -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.huaweitv.solar.ui.QrCodeView
+                        android:id="@+id/qr_coffee_paypal"
+                        android:layout_width="136dp"
+                        android:layout_height="136dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:gravity="center"
+                        android:text="@string/coffee_qr_caption"
+                        android:textColor="@color/text_muted"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- ===================================================== -->
+        <!-- STEP 2: CONFERMA DISATTIVAZIONE DEFINITIVA -->
+        <!-- ===================================================== -->
+        <LinearLayout
+            android:id="@+id/layout_coffee_step_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:contentDescription="@string/coffee_confirm_title"
+                    android:src="@drawable/ic_coffee" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/coffee_confirm_title"
+                    android:textColor="@color/solar_gold"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:lineSpacingExtra="2dp"
+                android:text="@string/coffee_confirm_message"
+                android:textColor="@color/text_primary"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_coffee_confirm_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/bg_button_selector"
+                    android:focusable="true"
+                    android:nextFocusRight="@+id/btn_coffee_confirm_yes"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="18dp"
+                    android:text="@string/coffee_confirm_cancel"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_coffee_confirm_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:background="@drawable/bg_button_selector"
+                    android:focusable="true"
+                    android:nextFocusLeft="@+id/btn_coffee_confirm_cancel"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="@string/coffee_confirm_yes"
+                    android:textColor="@color/battery_green"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- ===================================================== -->
+        <!-- STEP 3: RINGRAZIAMENTO FINALE -->
+        <!-- ===================================================== -->
+        <LinearLayout
+            android:id="@+id/layout_coffee_step_thank_you"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:contentDescription="@string/coffee_title"
+                android:src="@drawable/ic_coffee" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:lineSpacingExtra="2dp"
+                android:text="@string/coffee_thank_you_message"
+                android:textColor="@color/text_primary"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_coffee_thank_you_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/bg_button_selector"
+                android:focusable="true"
+                android:paddingStart="26dp"
+                android:paddingEnd="26dp"
+                android:text="@string/coffee_btn_ok"
+                android:textColor="@color/battery_green"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

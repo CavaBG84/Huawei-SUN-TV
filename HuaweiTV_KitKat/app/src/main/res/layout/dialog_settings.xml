@@ -1,0 +1,1222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="680dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog"
+    android:fadeScrollbars="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_title"
+            android:textColor="@color/text_primary"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <!-- ===================================================== -->
+        <!-- 0. SEZIONE LINGUA APPLICAZIONE -->
+        <!-- ===================================================== -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/settings_section_language"
+            android:textColor="@color/house_blue"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/border_card" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/settings_label_language"
+            android:textColor="@color/text_secondary"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/btn_lang_it"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/bg_lang_button_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:nextFocusRight="@+id/btn_lang_en"
+                android:nextFocusDown="@+id/btn_inverter_huawei"
+                android:orientation="horizontal"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp">
+
+                <ImageView
+                    android:id="@+id/img_flag_it"
+                    android:layout_width="24dp"
+                    android:layout_height="16dp"
+                    android:contentDescription="IT"
+                    android:src="@drawable/ic_flag_it" />
+
+                <TextView
+                    android:id="@+id/tv_lang_it"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:singleLine="true"
+                    android:text="IT"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_lang_en"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/bg_lang_button_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:nextFocusLeft="@+id/btn_lang_it"
+                android:nextFocusRight="@+id/btn_lang_de"
+                android:nextFocusDown="@+id/btn_inverter_huawei"
+                android:orientation="horizontal"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp">
+
+                <ImageView
+                    android:id="@+id/img_flag_en"
+                    android:layout_width="24dp"
+                    android:layout_height="16dp"
+                    android:contentDescription="EN"
+                    android:src="@drawable/ic_flag_en" />
+
+                <TextView
+                    android:id="@+id/tv_lang_en"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:singleLine="true"
+                    android:text="EN"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_lang_de"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/bg_lang_button_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:nextFocusLeft="@+id/btn_lang_en"
+                android:nextFocusRight="@+id/btn_lang_fr"
+                android:nextFocusDown="@+id/btn_inverter_fronius"
+                android:orientation="horizontal"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp">
+
+                <ImageView
+                    android:id="@+id/img_flag_de"
+                    android:layout_width="24dp"
+                    android:layout_height="16dp"
+                    android:contentDescription="DE"
+                    android:src="@drawable/ic_flag_de" />
+
+                <TextView
+                    android:id="@+id/tv_lang_de"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:singleLine="true"
+                    android:text="DE"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_lang_fr"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/bg_lang_button_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:nextFocusLeft="@+id/btn_lang_de"
+                android:nextFocusDown="@+id/btn_inverter_fronius"
+                android:orientation="horizontal"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp">
+
+                <ImageView
+                    android:id="@+id/img_flag_fr"
+                    android:layout_width="24dp"
+                    android:layout_height="16dp"
+                    android:contentDescription="FR"
+                    android:src="@drawable/ic_flag_fr" />
+
+                <TextView
+                    android:id="@+id/tv_lang_fr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:singleLine="true"
+                    android:text="FR"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- ===================================================== -->
+        <!-- 1. SEZIONE INVERTER DINAMICA -->
+        <!-- ===================================================== -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/settings_section_inverter"
+            android:textColor="@color/solar_gold"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/border_card" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/settings_label_inverter_brand"
+            android:textColor="@color/text_secondary"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_inverter_huawei"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="6dp"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/bg_button_selector"
+                android:focusable="true"
+                android:nextFocusUp="@+id/btn_lang_it"
+                android:nextFocusDown="@+id/et_ip"
+                android:text="@string/settings_brand_huawei"
+                android:textColor="@color/text_primary"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:ellipsize="end" />
+
+            <Button
+                android:id="@+id/btn_inverter_fronius"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:layout_marginStart="6dp"
+                android:layout_marginLeft="6dp"
+                android:background="@drawable/bg_button_selector"
+                android:focusable="true"
+                android:nextFocusUp="@+id/btn_lang_de"
+                android:nextFocusDown="@+id/et_ip"
+                android:text="@string/settings_brand_fronius"
+                android:textColor="@color/text_secondary"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:ellipsize="end" />
+        </LinearLayout>
+
+        <!-- IP Address Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/settings_label_ip"
+            android:textColor="@color/solar_gold"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_ip"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_edit_text_selector"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="@string/settings_hint_ip"
+            android:inputType="text"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_muted"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <!-- Dynamic Huawei Fields (Port + Slave ID) -->
+        <LinearLayout
+            android:id="@+id/layout_huawei_fields"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <!-- Port Field -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_dialog_port_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_label_port"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/et_port"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/bg_edit_text_selector"
+                    android:digits="0123456789"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:inputType="number"
+                    android:nextFocusUp="@+id/et_ip"
+                    android:nextFocusDown="@+id/btn_port_preset_502"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:text="502"
+                    android:textColor="@color/text_primary"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_port_preset_502"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/bg_button_selector"
+                        android:focusable="true"
+                        android:nextFocusUp="@+id/et_port"
+                        android:nextFocusDown="@+id/btn_poll_5"
+                        android:text="502"
+                        android:textColor="@color/text_primary"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_port_preset_6607"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_button_selector"
+                        android:focusable="true"
+                        android:nextFocusUp="@+id/et_port"
+                        android:nextFocusDown="@+id/btn_poll_5"
+                        android:text="6607"
+                        android:textColor="@color/text_primary"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Slave / Unit ID Field -->
+            <LinearLayout
+                android:id="@+id/layout_unit_id_container"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_label_unit_id"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/et_unit_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/bg_edit_text_selector"
+                    android:digits="0123456789"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:inputType="number"
+                    android:nextFocusUp="@+id/et_ip"
+                    android:nextFocusDown="@+id/btn_unit_preset_0"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:text="1"
+                    android:textColor="@color/text_primary"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_unit_preset_0"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/bg_button_selector"
+                        android:focusable="true"
+                        android:nextFocusUp="@+id/et_unit_id"
+                        android:nextFocusDown="@+id/btn_poll_5"
+                        android:text="ID 0"
+                        android:textColor="@color/text_primary"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_unit_preset_1"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/bg_button_selector"
+                        android:focusable="true"
+                        android:nextFocusUp="@+id/et_unit_id"
+                        android:nextFocusDown="@+id/btn_poll_5"
+                        android:text="ID 1"
+                        android:textColor="@color/text_primary"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_unit_preset_2"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_button_selector"
+                        android:focusable="true"
+                        android:nextFocusUp="@+id/et_unit_id"
+                        android:nextFocusDown="@+id/btn_poll_5"
+                        android:text="ID 2"
+                        android:textColor="@color/text_primary"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Dynamic Fronius Fields (Device ID) -->
+        <LinearLayout
+            android:id="@+id/layout_fronius_fields"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_label_fronius_id"
+                android:textColor="@color/text_secondary"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_fronius_device_id"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_selector"
+                android:digits="0123456789"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:inputType="number"
+                android:nextFocusUp="@+id/et_ip"
+                android:nextFocusDown="@+id/btn_fronius_id_1"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:text="1"
+                android:textColor="@color/text_primary"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_fronius_id_1"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/bg_button_selector"
+                    android:focusable="true"
+                    android:nextFocusUp="@+id/et_fronius_device_id"
+                    android:nextFocusDown="@+id/btn_poll_5"
+                    android:text="ID 1"
+                    android:textColor="@color/text_primary"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_fronius_id_2"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_button_selector"
+                    android:focusable="true"
+                    android:nextFocusUp="@+id/et_fronius_device_id"
+                    android:nextFocusDown="@+id/btn_poll_5"
+                    android:text="ID 2"
+                    android:textColor="@color/text_primary"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Polling Interval -->
+        <TextView
+            android:id="@+id/tv_dialog_poll_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/settings_label_poll"
+            android:textColor="@color/text_secondary"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_poll_5"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/bg_button_selector"
+                android:focusable="true"
+                android:nextFocusDown="@+id/btn_mock_toggle"
+                android:text="5s"
+                android:textColor="@color/text_primary"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_poll_10"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/bg_button_selector"
+                android:focusable="true"
+                android:nextFocusDown="@+id/btn_mock_toggle"
+                android:text="10s"
+                android:textColor="@color/text_primary"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_poll_15"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/bg_button_selector"
+                android:focusable="true"
+                android:nextFocusDown="@+id/btn_mock_toggle"
+                android:text="15s"
+                android:textColor="@color/text_primary"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_poll_30"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button_selector"
+                android:focusable="true"
+                android:nextFocusDown="@+id/btn_mock_toggle"
+                android:text="30s"
+                android:textColor="@color/text_primary"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Mock Mode Toggle -->
+        <Button
+            android:id="@+id/btn_mock_toggle"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_button_selector"
+            android:focusable="true"
+            android:nextFocusUp="@+id/btn_poll_5"
+            android:nextFocusDown="@+id/btn_meter_alarm_toggle"
+            android:text="@string/settings_mock_title"
+            android:textColor="@color/status_mock"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:ellipsize="end" />
+
+        <!-- ===================================================== -->
+        <!-- 2. SEZIONE CONTATORE / ALLARME SUPERAMENTO SOGLIA -->
+        <!-- ===================================================== -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="@string/settings_section_meter"
+            android:textColor="@color/house_blue"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/border_card" />
+
+        <Button
+            android:id="@+id/btn_meter_alarm_toggle"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_button_selector"
+            android:focusable="true"
+            android:nextFocusUp="@+id/btn_mock_toggle"
+            android:nextFocusDown="@+id/et_contract_power_kw"
+            android:text="@string/settings_meter_alarm_title"
+            android:textColor="@color/text_secondary"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:ellipsize="end" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/settings_label_contract_kw"
+            android:textColor="@color/text_secondary"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_contract_power_kw"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_edit_text_selector"
+            android:digits="0123456789.,"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="@string/settings_hint_contract_kw"
+            android:inputType="numberDecimal"
+            android:nextFocusUp="@+id/btn_meter_alarm_toggle"
+            android:nextFocusDown="@+id/btn_contract_30"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:text="3.0"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_muted"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_contract_30"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/bg_button_selector"
+                android:focusable="true"
+                android:nextFocusUp="@+id/et_contract_power_kw"
+                android:nextFocusDown="@+id/btn_meter_sound_toggle"
+                android:text="3.0 kW"
+                android:textColor="@color/text_primary"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_contract_45"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/bg_button_selector"
+                android:focusable="true"
+                android:nextFocusUp="@+id/et_contract_power_kw"
+                android:nextFocusDown="@+id/btn_meter_sound_toggle"
+                android:text="4.5 kW"
+                android:textColor="@color/text_primary"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_contract_60"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button_selector"
+                android:focusable="true"
+                android:nextFocusUp="@+id/et_contract_power_kw"
+                android:nextFocusDown="@+id/btn_meter_sound_toggle"
+                android:text="6.0 kW"
+                android:textColor="@color/text_primary"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_meter_sound_toggle"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_button_selector"
+            android:focusable="true"
+            android:nextFocusUp="@+id/btn_contract_30"
+            android:nextFocusDown="@+id/btn_test_power_alarm"
+            android:text="@string/settings_meter_sound_title"
+            android:textColor="@color/house_blue"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:ellipsize="end" />
+
+        <Button
+            android:id="@+id/btn_test_power_alarm"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_button_selector"
+            android:focusable="true"
+            android:nextFocusUp="@+id/btn_meter_sound_toggle"
+            android:nextFocusDown="@+id/btn_shelly_shedding_toggle"
+            android:text="@string/settings_btn_test_alarm"
+            android:textColor="@color/grid_red"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:ellipsize="end" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="@string/settings_test_alarm_hint"
+            android:textColor="@color/text_muted"
+            android:textSize="10sp"
+            android:maxLines="2"
+            android:ellipsize="end" />
+
+        <!-- ===================================================== -->
+        <!-- 3. SEZIONE LOAD SHEDDING LOCALE VIA SHELLY -->
+        <!-- ===================================================== -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="@string/settings_section_shelly"
+            android:textColor="@color/battery_green"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/border_card" />
+
+        <Button
+            android:id="@+id/btn_shelly_shedding_toggle"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_button_selector"
+            android:focusable="true"
+            android:nextFocusUp="@+id/btn_test_power_alarm"
+            android:nextFocusDown="@+id/et_shelly_name"
+            android:text="@string/settings_shelly_master_title"
+            android:textColor="@color/text_secondary"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:ellipsize="end" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_label_shelly_name"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/et_shelly_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/bg_edit_text_selector"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/settings_hint_shelly_name"
+                    android:inputType="text"
+                    android:nextFocusUp="@+id/btn_shelly_shedding_toggle"
+                    android:nextFocusDown="@+id/btn_shelly_gen1"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:textColor="@color/text_primary"
+                    android:textColorHint="@color/text_muted"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_label_shelly_ip"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/et_shelly_ip"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/bg_edit_text_selector"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/settings_hint_shelly_ip"
+                    android:inputType="text"
+                    android:nextFocusUp="@+id/btn_shelly_shedding_toggle"
+                    android:nextFocusDown="@+id/btn_shelly_gen2"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:textColor="@color/text_primary"
+                    android:textColorHint="@color/text_muted"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/settings_label_shelly_gen"
+            android:textColor="@color/text_secondary"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_shelly_gen1"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="6dp"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/bg_button_selector"
+                android:focusable="true"
+                android:nextFocusUp="@+id/et_shelly_name"
+                android:nextFocusDown="@+id/et_shelly_channel"
+                android:text="GEN1 (Shelly 1/1PM/2.5/EM)"
+                android:textColor="@color/text_secondary"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_shelly_gen2"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_weight="1"
+                android:layout_marginStart="6dp"
+                android:layout_marginLeft="6dp"
+                android:background="@drawable/bg_button_selector"
+                android:focusable="true"
+                android:nextFocusUp="@+id/et_shelly_ip"
+                android:nextFocusDown="@+id/et_shelly_delay"
+                android:text="GEN2 (Shelly Plus/Pro)"
+                android:textColor="@color/battery_green"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_label_shelly_channel"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/et_shelly_channel"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/bg_edit_text_selector"
+                    android:digits="0123456789"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:inputType="number"
+                    android:nextFocusUp="@+id/btn_shelly_gen1"
+                    android:nextFocusDown="@+id/btn_shelly_ch_0"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:text="0"
+                    android:textColor="@color/text_primary"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_shelly_ch_0"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/bg_button_selector"
+                        android:focusable="true"
+                        android:nextFocusUp="@+id/et_shelly_channel"
+                        android:nextFocusDown="@+id/btn_test_shelly_off"
+                        android:text="CH 0"
+                        android:textColor="@color/text_primary"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_shelly_ch_1"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_button_selector"
+                        android:focusable="true"
+                        android:nextFocusUp="@+id/et_shelly_channel"
+                        android:nextFocusDown="@+id/btn_test_shelly_off"
+                        android:text="CH 1"
+                        android:textColor="@color/text_primary"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_label_shelly_delay"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/et_shelly_delay"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/bg_edit_text_selector"
+                    android:digits="0123456789"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:inputType="number"
+                    android:nextFocusUp="@+id/btn_shelly_gen2"
+                    android:nextFocusDown="@+id/btn_shelly_delay_10"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:text="15"
+                    android:textColor="@color/text_primary"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_shelly_delay_10"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/bg_button_selector"
+                        android:focusable="true"
+                        android:nextFocusUp="@+id/et_shelly_delay"
+                        android:nextFocusDown="@+id/btn_test_shelly_off"
+                        android:text="10s"
+                        android:textColor="@color/text_primary"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_shelly_delay_15"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/bg_button_selector"
+                        android:focusable="true"
+                        android:nextFocusUp="@+id/et_shelly_delay"
+                        android:nextFocusDown="@+id/btn_test_shelly_off"
+                        android:text="15s"
+                        android:textColor="@color/text_primary"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_shelly_delay_30"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_button_selector"
+                        android:focusable="true"
+                        android:nextFocusUp="@+id/et_shelly_delay"
+                        android:nextFocusDown="@+id/btn_test_shelly_off"
+                        android:text="30s"
+                        android:textColor="@color/text_primary"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_test_shelly_off"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_button_selector"
+            android:focusable="true"
+            android:nextFocusUp="@+id/btn_shelly_delay_15"
+            android:nextFocusDown="@+id/btn_save"
+            android:text="@string/settings_btn_test_shelly"
+            android:textColor="@color/battery_green"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:ellipsize="end" />
+
+        <TextView
+            android:id="@+id/tv_shelly_test_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/text_secondary"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:visibility="gone" />
+
+        <!-- Validation Error Message -->
+        <TextView
+            android:id="@+id/tv_validation_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/grid_red"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <!-- Actions (Cancel / Save) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/bg_button_selector"
+                android:focusable="true"
+                android:nextFocusUp="@+id/btn_test_shelly_off"
+                android:paddingStart="22dp"
+                android:paddingEnd="22dp"
+                android:text="@string/settings_btn_cancel"
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_button_selector"
+                android:focusable="true"
+                android:nextFocusUp="@+id/btn_test_shelly_off"
+                android:paddingStart="26dp"
+                android:paddingEnd="26dp"
+                android:text="@string/settings_btn_save"
+                android:textColor="@color/battery_green"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
