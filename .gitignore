@@ -1,7 +1,29 @@
-# Evita di caricare file binari o chiavi nel repository (gli APK vanno nelle Releases)
-*.apk
-*.aab
+# Signing & secrets
+keystore.properties
 *.jks
 *.keystore
+
+# Local environment & notes
+local.properties
+gemini.md.txt
+
+# Gradle & Kotlin caches
+.gradle/
+.kotlin/
+
+# Build outputs & Android packages
+**/build/
+dist/
+*.apk
+*.aab
+*.ap_
+*.dex
+captures/
+.externalNativeBuild/
+.cxx/
+
+# IDE & OS files
+.idea/
+*.iml
 .DS_Store
 Thumbs.db
