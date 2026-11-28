@@ -77,15 +77,11 @@ $$\text{Daily PV Yield} = \max\big(0,\ \text{Daily Inverter Yield (32114)} + \te
 | **Moderna (TV & Mobile)** | `SolarDeck-v2.0-modern.apk` | [Scarica `SolarDeck-v2.0-modern.apk`](https://github.com/CavaBG84/SolarDeck/releases/download/v2.0.0/SolarDeck-v2.0-modern.apk) |
 | **Legacy KitKat (Android 4.4.4+)** | `SolarDeck-v2.0-kitkat.apk` | [Scarica `SolarDeck-v2.0-kitkat.apk`](https://github.com/CavaBG84/SolarDeck/releases/download/v2.0.0/SolarDeck-v2.0-kitkat.apk) |
 
-### Codici Downloader per Amazon Fire TV
-
-È possibile installare l'app su Fire TV tramite l'app **Downloader** inserendo l'URL diretto della release `v2.0.0` qui sopra oppure usando gli short-code dedicati:
-
-| Versione | Stato Codici Downloader | Note |
+| Versione | Codice Downloader | Note |
 |---|---|---|
-| **v1.0** *(legacy `Huawei-SUN-TV`)* | *Non presenti nel README locale* | Se mantieni attivi i vecchi codici `v1.0`, inseriscili qui come riferimento legacy |
-| **v2.0.0** *(Moderna — `SolarDeck-v2.0-modern.apk`)* | **Da aggiornare dopo la pubblicazione `v2.0.0`** | Generare il nuovo short-code sull'URL `releases/download/v2.0.0/SolarDeck-v2.0-modern.apk` dopo il rilascio su GitHub |
-| **v2.0.0** *(KitKat — `SolarDeck-v2.0-kitkat.apk`)* | **Da aggiornare dopo la pubblicazione `v2.0.0`** | Generare il nuovo short-code sull'URL `releases/download/v2.0.0/SolarDeck-v2.0-kitkat.apk` dopo il rilascio su GitHub |
+| **v2.0.0** *(Moderna – `SolarDeck-v2.0-modern.apk`)* | **`6680500`** | Android 5.0+, Android TV e Amazon Fire TV Stick |
+| **v2.0.0** *(KitKat – `SolarDeck-v2.0-kitkat.apk`)* | **`4961801`** | Build legacy dedicata ad Android 4.4.4 KitKat |
+| **v1.0.0** *(Legacy `Huawei-SUN-TV`)* | `9183283` (Modern) / `1728411` (KitKat) | Versione precedente solo Huawei SUN2000 |
 
 ### Compilazione e Test da riga di comando (JDK 17)
 
